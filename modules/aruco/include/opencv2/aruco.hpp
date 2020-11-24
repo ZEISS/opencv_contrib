@@ -183,6 +183,17 @@ struct CV_EXPORTS_W DetectorParameters {
     CV_PROP_RW float aprilTagMaxLineFitMse;
     CV_PROP_RW int aprilTagMinWhiteBlackDiff;
     CV_PROP_RW int aprilTagDeglitch;
+
+    // Aruco3 functionality
+    CV_PROP_RW bool useAruco3Detection;
+    CV_PROP_RW int minSideLengthCanonicalImg;
+    CV_PROP_RW double minMarkerLengthRatioOriginalImg;
+    // Aruco3 functionality especially for video
+    CV_PROP_RW double cameraMotionSpeed;
+    CV_PROP_RW bool useGlobalThreshold;
+    CV_PROP_RW bool foundGlobalThreshold;
+    CV_PROP_RW double otsuGlobalThreshold;
+    CV_PROP_RW int foundMarkerInLastFrames;
 };
 
 
